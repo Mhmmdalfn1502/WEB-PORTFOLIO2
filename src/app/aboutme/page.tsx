@@ -1,7 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { CiInstagram } from "react-icons/ci";
-import { AiOutlineLinkedin } from "react-icons/ai";
 
 export default function AboutMe() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -42,16 +40,14 @@ export default function AboutMe() {
         <div className="flex flex-row justify-between items-center w-screen px-23 mt-10">
           <a className="text-[16px] tracking-wider" href="https://www.instagram.com/mhmmdalfn_1502/">
             <span>Instagram</span>
-            {/* <CiInstagram size={60} color="#272727" /> */}
           </a>
           <a className="text-[16px] tracking-wider" href="https://www.linkedin.com/in/muhammad-alfan1502/">
             <span>Linkedin</span>
-            {/* <AiOutlineLinkedin size={60} color="#272727" /> */}
           </a>
         </div>
 
         <div className="w-full lg:w-[40%] lg:px-0 px-4 mt-20 lg:text-justify text-center">
-          <span className="text-[32px] lg:text-[40px] font-extrabold leading-10 -tracking-tight">I'm UI/UX designer and Front-end web developer</span>
+          <span className="text-[32px] lg:text-[40px] font-extrabold leading-10 -tracking-tight">Im UI/UX designer and Front-end web developer</span>
           <div className="paragraph flex flex-col gap-6 mt-10 text-start text-[16px] leading-relaxed">
             <span>
               With a passion for UI/UX design, web development, and visual storytelling, I enjoy collaborating with people who appreciate clarity, value functional aesthetics, and understand that user experience is at the core of every
