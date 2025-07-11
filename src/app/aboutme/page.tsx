@@ -19,7 +19,7 @@ export default function AboutMe() {
 
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-center bg-[#F5F4FF] lg:py-28 py-10 overflow-hidden">
-      <h1 className="absolute text-[180px] font-extrabold text-[#272727] mix-blend-difference pointer-events-none z-10 select-none">ABOUT</h1>
+      <h1 className="absolute top-40 text-[180px] font-extrabold text-[#272727] mix-blend-difference pointer-events-none z-0 select-none">ABOUT</h1>
 
       <div className="relative w-[300px] h-auto z-20">
         <img
@@ -31,7 +31,7 @@ export default function AboutMe() {
           }}
         />
 
-        <div className="absolute p-10 inset-0 bg-gradient-to-t from-white via-white/10 to-transparent pointer-events-none" />
+        <div className="absolute pb-10 inset-0 bg-gradient-to-t from-white via-white/10 to-transparent pointer-events-none" />
       </div>
 
       <div className="relative z-30 flex flex-col items-center mt-10 text-[#272727] px-6 lg:px-0">
@@ -46,8 +46,8 @@ export default function AboutMe() {
           </a>
         </div>
 
-        <div className="w-full lg:w-[40%] lg:px-0 px-4 mt-20 lg:text-justify text-center">
-          <span className="text-[32px] lg:text-[40px] font-extrabold leading-10 -tracking-tight">Im UI/UX designer and Front-end web developer</span>
+        <div className="w-full lg:w-[40%] lg:px-0 px-4 mt-18 lg:text-justify text-center">
+          <span className="text-[32px] lg:text-[40px] font-extrabold leading-10 -tracking-tight">I'm UI/UX designer and Front-end web developer</span>
           <div className="paragraph flex flex-col gap-6 mt-10 text-start text-[16px] leading-relaxed">
             <span>
               With a passion for UI/UX design, web development, and visual storytelling, I enjoy collaborating with people who appreciate clarity, value functional aesthetics, and understand that user experience is at the core of every

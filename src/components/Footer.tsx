@@ -4,10 +4,10 @@ export default function Footer() {
       <div className="marquee-wrapper">
         <span className="marquee-content lg:text-[128px] text-[82px] text-[#272727] font-extrabold">HELLO! HELLO! HELLO! HELLO! HELLO! HELLO!</span>
       </div>
-      <div className="lg:px-23 px-6 lg:py-10 py-4 text-right border-t-1 border-b-1 border-[#272727]">
+      <div className="lg:px-23 px-4 lg:py-10 py-4 text-right border-t-1 border-b-1 border-[#272727]">
         <span className="lg:text-[40px] text-[24px] text-[#272727] font-extrabold">Need a creative partner in front-end web developer or a UI/UX designer? Let's build something great together</span>
       </div>
-      <div className="lg:py-10 py-4 lg:px-23 px-6">
+      <div className="lg:py-10 py-4 lg:px-23 px-4">
         <div className="nav flex flex-row lg:gap-10 gap-4 items-center">
           <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="">
             HOME

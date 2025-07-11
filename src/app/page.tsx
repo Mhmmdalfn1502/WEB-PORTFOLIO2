@@ -33,10 +33,10 @@ export default function Home() {
 
         <div className="HeadRight w-[400px] lg:h-[400px] lg:p-2 p-4 dashed-custom gap-2 flex flex-col">
           <div className="text flex flex-col w-[100%]">
-            <span style={{ animationDelay: "0.5s" }} className="font-light text-[#272727 tracking-wider animate__animated animate__fadeInLeft">
+            <span style={{ animationDelay: "0.5s" }} className="font-light text-[#272727] tracking-wider animate__animated animate__fadeInLeft">
               Hello, I'm Muhammad Alfan
             </span>
-            <span style={{ animationDelay: "0.6s" }} className="text-[40px] font-bold leading-tight animate__animated animate__fadeInLeft">
+            <span style={{ animationDelay: "0.6s" }} className="text-[40px] text-[#272727] font-bold leading-tight animate__animated animate__fadeInLeft">
               I'm UI/UX Designer, & Front-end Web Developer
             </span>
           </div>
@@ -52,11 +52,11 @@ export default function Home() {
 
       <div className="flex flex-row justify-between items-center lg:px-28 px-4 w-[100%] lg:mt-18 mt-10">
         <div className="link flex flex-row gap-2 justify-center items-center text-[#272727] text-[16px]">
-          <a className="tracking-wider" href="">
+          <a className="tracking-wider" href="https://www.linkedin.com/in/muhammad-alfan1502/">
             Linkedin
           </a>
           <span>|</span>
-          <a className="tracking-wider" href="">
+          <a className="tracking-wider" href="https://github.com/Mhmmdalfn1502">
             Github
           </a>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
         {/* First sec */}
         <div className="flex-shrink-0 snap-start w-screen h-full px-4 lg:px-28 relative pointer-events-none">
           <div className="flex flex-col lg:justify-center justify-between h-full">
-            <div>
+            <div className="flex flex-col">
               <span className="lg:text-[128px] text-[64px] leading-tight text-[#272727] font-extrabold">PORTFOLIO</span>
               <span className="bg-[#272727] lg:w-[680px] w-[340px] lg:h-[96px] h-[48px] flex items-center lg:text-[128px] text-[64px] text-[#F5F4FF] font-extrabold leading-tight">&PREVIOUS</span>
               <span className="lg:text-[128px] text-[64px] leading-tight text-[#272727] font-extrabold">PROJECT</span>
@@ -78,10 +78,10 @@ export default function Home() {
 
             <div className="flex flex-row justify-between items-end mt-8 ">
               <span className="text-[20px] text-[#272727] lg:w-[600px]">_______</span>
-              <div className="flex flex-row gap-2 items-center">
-                <span className="text-[16px] tracking-wider flex flex-row gap-2 items-center">Let's see</span>
+              <a href="#project2" className="flex flex-row gap-2 items-center scroll-smooth">
+                <span className="text-[16px] tracking-wider">Let's see</span>
                 <AiOutlineSwapRight size={20} color="#272727" />
-              </div>
+              </a>
             </div>
           </div>
           {/* Element dekoratif absolut */}
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
 
         {/* Project Card 2 */}
-        <div  className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
+        <div id="project2" className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
           <div className="flex lg:flex-row flex-col items-center h-full lg:w-full w-[350px]">
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">TRAVEL APPLICATION</span>
@@ -141,7 +141,8 @@ export default function Home() {
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">WEBSITE KULINER</span>
               <span className="lg:text-[60px] lg:w-[500px] text-[30px] font-bold text-[#272727]">Info-Kuliner</span>
-              <p className="lg:text-[16px] text-[10px] text-[#808080] lg:w-[500px] w-full mix-blend-difference">Info-Kuliner is a culinary website that helps users find dining spots and top food recommendations based on reviews and popularity.
+              <p className="lg:text-[16px] text-[10px] text-[#808080] lg:w-[500px] w-full mix-blend-difference">
+                Info-Kuliner is a culinary website that helps users find dining spots and top food recommendations based on reviews and popularity.
               </p>
               <div className="flex flex-col gap-2 mt-6">
                 <span className="lg:text-[16px] text-[10px] text-[#272727] font-bold">Build with: Figma, ReactJs, Tailwincdcss</span>
@@ -165,7 +166,8 @@ export default function Home() {
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">HAND RECOGNITION</span>
               <span className="lg:text-[60px] lg:w-[500px] text-[30px] font-bold text-[#272727]">SIGN-LANGUAGE BISINDO</span>
-              <p className="lg:text-[16px] text-[10px] text-[#808080] lg:w-[500px] w-full mix-blend-difference">This website detects BISINDO alphabets in real-time through the camera, using a machine learning model with React on the frontend and Flask on the backend.
+              <p className="lg:text-[16px] text-[10px] text-[#808080] lg:w-[500px] w-full mix-blend-difference">
+                This website detects BISINDO alphabets in real-time through the camera, using a machine learning model with React on the frontend and Flask on the backend.
               </p>
               <div className="flex flex-col gap-2 mt-6">
                 <span className="lg:text-[16px] text-[10px] text-[#272727] font-bold">Build with: Figma, ReactJs, Tailwincdcss, Flask, MediaPipe</span>

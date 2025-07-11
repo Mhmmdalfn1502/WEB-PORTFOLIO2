@@ -49,7 +49,7 @@ export default function Navbar() {
           </li>
           <li className="flex flex-row justify-between items-center">
             <div>
-              <Link href="#Works">WORKS</Link>
+              <Link href="/works">WORKS</Link>
               <span className="text-[#808080] font-medium text-[16px] ml-2">(03)</span>{" "}
             </div>
             <Link className="hover:rotate-45 transition-transform duration-300" href="#about">
