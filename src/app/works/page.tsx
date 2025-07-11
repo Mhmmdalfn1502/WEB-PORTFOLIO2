@@ -45,7 +45,7 @@ export default function Works() {
   return (
     <main className="w-screen bg-[#F5F4FF]">
       {/* Hero Section */}
-      <div className="flex flex-col w-full justify-center items-center pt-40 pb-20 gap-6 px-6 lg:px-28">
+      <div className="flex flex-col w-full justify-center items-center lg:pt-40 pt-20 pb-20 gap-6 px-6 lg:px-28">
         <span className="text-[#808080] text-center tracking-widest">Graphic Design, UI/UX Design & Front-end Web Developer</span>
         <div className="leading-tight flex flex-col">
           <span className="lg:text-[60px] text-[24px] text-center text-[#272727] font-extrabold uppercase">Designing clean,</span>
