@@ -1,5 +1,45 @@
 "use client";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
+const experiences = [
+  {
+    title: "Assistant Lecturer",
+    details: ["- UI/UX Design", "- Teknik Animasi dan Multimedia | IBI Kesatuan Bogor"],
+    date: "Sep 2024 - Jan 2025",
+  },
+  {
+    title: "Internship",
+    details: ["Graphic Designer | Bestari Property"],
+    date: "Jul 2024 - Jan 2025",
+  },
+  {
+    title: "CROWD IT 2024 Workshop",
+    details: ["UI/UX Workshop Speaker | IBI Kesatuan Bogor"],
+    date: "Jun - Jul 2024",
+  },
+  {
+    title: "International Competition",
+    details: ["The 2nd 'CZIE Cup' International Invitational Competition of Innovation and Entrepreneurship"],
+    date: "Mar - Dec 2024",
+  },
+  {
+    title: "Front-End Developer Training Certificate",
+    details: ["Completed a Front-End Developer Training Program | Dibimbing.id"],
+    date: "Feb 2024",
+  },
+  {
+    title: "Independent Study Batch 5",
+    details: ["Intermediate Fullstack Web Development Program | PT Global Investment Institusi"],
+    date: "Aug - Dec 2023",
+  },
+  {
+    title: "ISC Web Design",
+    details: ["2nd Place Winner in the Web Design Competition"],
+    date: "2023",
+  },
+];
+
 
 export default function AboutMe() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -46,7 +86,7 @@ export default function AboutMe() {
           </a>
         </div>
 
-        <div className="w-full lg:w-[40%] lg:px-0 px-4 mt-18 lg:text-justify text-center">
+        <div className="w-full lg:w-[40%] lg:px-0 px-4 lg:mt-18 mt-10 lg:text-justify text-center">
           <span className="text-[32px] lg:text-[40px] font-extrabold leading-10 -tracking-tight">I'm UI/UX designer and Front-end web developer</span>
           <div className="paragraph flex flex-col gap-6 mt-10 text-start text-[16px] leading-relaxed">
             <span>
@@ -59,97 +99,36 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full lg:px-23 px-4 mt-10 gap-4">
-        <div>
-          <span className="text-[40px] text-[#272727] font-extrabold">My Experience</span>
-          <hr className="mt-4" />
+<div className="flex flex-col w-full lg:px-23 px-4 mt-10 gap-4">
+  <div>
+    <span className="text-[40px] text-[#272727] font-extrabold">My Experience</span>
+    <hr className="mt-4" />
+  </div>
+
+  {experiences.map((exp, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+    >
+      <div className="flex flex-row justify-between items-center gap-2">
+        <div className="flex flex-col">
+          <span className="text-[#272727] text-[14px] lg:text-[20px] font-extrabold">{exp.title}</span>
+          {exp.details.map((line, i) => (
+            <span key={i} className="text-[#808080] text-[12px] lg:text-[16px] font-medium">{line}</span>
+          ))}
         </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">Assistant Lecturer</span>
-              <span className="text-[#808080] text-[16px] font-medium">- UI/UX Design</span>
-              <span className="text-[#808080] text-[16px] font-medium">- Teknik Animasi dan Multimedia | IBI Kesatuan Bogor</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">Sep 2024 - Jan 2025</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
-        </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">Internship</span>
-              <span className="text-[#808080] text-[16px] font-medium">Graphic Designer | Bestari Property</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">Jul 2024 - Jan 2025</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
-        </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">CROWD IT 2024 Workshop</span>
-              <span className="text-[#808080] text-[16px] font-medium">UI/UX Workshop Speaker | IBI Kesatuan Bogor</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">Jun - Jul 2024</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
-        </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">International Competition</span>
-              <span className="text-[#808080] text-[16px] font-medium">The 2nd 'CZIE Cup' International Invitational Competition of Innovation and Entrepreneurship</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">Mar - Dec 2024</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
-        </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">Front-End Developer Training Certificate</span>
-              <span className="text-[#808080] text-[16px] font-medium">Completed a Front-End Developer Training Program | Dibimbing.id</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">Feb 2024</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
-        </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">Independent Study Batch 5</span>
-              <span className="text-[#808080] text-[16px] font-medium">Intermediate Fullstack Web Development Program | PT Global Investment Institusi</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">Aug - Dec 2023</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
-        </div>
-        <div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-[#272727] text-[20px] font-bold">ISC Web Design</span>
-              <span className="text-[#808080] text-[16px] font-medium">2nd Place Winner in the Web Design Competition</span>
-            </div>
-            <div>
-              <span className="text-[#272727] text-[20px]">2023</span>
-            </div>
-          </div>
-          <hr className="mt-4" />
+        <div className="text-end">
+          <span className="text-[#272727] text-[12px] lg:text-[16px] -tracking-widest">{exp.date}</span>
         </div>
       </div>
+      <hr className="mt-4" />
+    </motion.div>
+  ))}
+</div>
+
     </main>
   );
 }

@@ -2,55 +2,69 @@
 
 import { AiOutlineSwapRight } from "react-icons/ai";
 import "animate.css";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export default function Home() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const scrollToSection = () => {
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    const { clientX, clientY } = e;
+    setPosition({
+      x: (clientX - window.innerWidth / 2) / 50,
+      y: (clientY - window.innerHeight / 2) / 50,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#F5F4FF] lg:pt-36 pt-20">
       {/* Header */}
       <div className="head flex lg:flex-row flex-col gap-6 justify-center items-center bg-[#F5F4FF]">
         <div className="HeadLeft flex flex-col">
-          <div className="static flex justify-start items-center px-6 w-full lg:h-[200px] h-[140px] border-[#272727] hover:bg-[#272727] border-2">
+          <div className="static flex justify-start items-center px-6 w-full lg:h-[200px] h-[140px] border-[#272727] transition-all duration-700 hover:bg-[#272727] border-2">
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-23 left-0"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-110 left-47"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-198 left-93"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-83 top-52 lg:left-23 left-0"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-83 top-52 lg:left-110 left-47"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-83 top-52 lg:left-198 left-93"></div>
-            <span style={{ animationDelay: "0.1s" }} className="lg:text-[200px] text-[100px] text-[#272727] hover:text-[#F5F4FF] font-black tracking-wider animate__animated animate__fadeInLeft">
+            <span style={{ animationDelay: "0.1s" }} className="lg:text-[200px] text-[100px] text-[#272727] hover:text-[#F5F4FF] font-black transition-all tracking-wider animate__animated animate__fadeInLeft">
               PORT-
             </span>
           </div>
-          <div style={{ animationDelay: "0.2s" }} className="Folio flex justify-center items-center px-6 w-full lg:h-[200px] h-[140px] bg-[#272727] hover:bg-[#F5F4FF] transition-transform duration-700 animate__animated animate__fadeInLeft">
-            <span className="lg:text-[200px] text-[100px] text-[#F5F4FF] hover:text-[#272727] font-black tracking-wider">FOLIO</span>
+          <div style={{ animationDelay: "0.2s" }} className="Folio flex justify-center items-center px-6 w-full lg:h-[200px] h-[140px] bg-[#272727] transition-all hover:bg-[#F5F4FF] duration-700 animate__animated animate__fadeInLeft">
+            <span className="lg:text-[200px] text-[100px] text-[#F5F4FF] hover:text-[#272727] transition-all font-black tracking-wider">FOLIO</span>
           </div>
         </div>
 
         <div className="HeadRight w-[400px] lg:h-[400px] lg:p-2 p-4 dashed-custom gap-2 flex flex-col">
-          <div className="text flex flex-col w-[100%]">
-            <span style={{ animationDelay: "0.5s" }} className="font-light text-[#272727] tracking-wider animate__animated animate__fadeInLeft">
+          <div className="paragraph text flex flex-col w-full">
+            <span style={{ animationDelay: "0.5s", animationFillMode: "forwards", animationName: "reveal", animationDuration: "0.5s" }} className="font-light text-[#272727] tracking-wider">
               Hello, I'm Muhammad Alfan
             </span>
-            <span style={{ animationDelay: "0.6s" }} className="text-[40px] text-[#272727] font-bold leading-tight animate__animated animate__fadeInLeft">
+            <span style={{ animationDelay: "0.6s", animationFillMode: "forwards", animationName: "reveal", animationDuration: "0.5s" }} className="text-[40px] text-[#272727] font-bold leading-tight">
               I'm UI/UX Designer, & Front-end Web Developer
             </span>
           </div>
 
           <div className="flex flex-row items-end gap-4">
             <div className="line w-[80%] lg:h-[150px] h-[10px] border-l-2 border-b-2 border-black"></div>
-            <a className="border-1 w-[30%] h-[30px] text-center text-[16px]" href="">
+            <a href="/CV-MuhammadAlfan.pdf" download className="border-1 w-[30%] h-[30px] text-center text-[16px]">
               My Resume
             </a>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-row justify-between items-center lg:px-28 px-4 w-[100%] lg:mt-18 mt-10">
+      <div className="flex flex-row justify-between items-center lg:px-28 px-4 w-[100%] lg:mt-18 mt-6">
         <div className="link flex flex-row gap-2 justify-center items-center text-[#272727] text-[16px]">
           <a className="tracking-wider" href="https://www.linkedin.com/in/muhammad-alfan1502/">
             Linkedin
@@ -85,9 +99,23 @@ export default function Home() {
             </div>
           </div>
           {/* Element dekoratif absolut */}
-          <div className="absolute lg:top-20 top-0 lg:left-24 left-2 lg:w-[60px] w-[36px] lg:h-[60px] h-[36px] border border-[#808080] rounded-full"> </div>
+          <div
+            style={{
+              transform: `translate(${position.x}px, ${position.y}px)`,
+            }}
+            className="absolute lg:top-20 top-0 lg:left-24 left-2 lg:w-[60px] w-[36px] lg:h-[60px] h-[36px] border border-[#808080] rounded-full"
+          >
+            {" "}
+          </div>
           <div className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[530px] w-[300px] lg:h-[510px] h-[330px] bg-gradient-to-bl from-[#272727]/10 pointer-events-none"></div>
-          <img className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
+          <img
+            style={{
+              transform: `translate(${position.x}px, ${position.y}px)`,
+            }}
+            className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50"
+            src="Kutip.png"
+            alt=""
+          />
         </div>
 
         {/* Project Card 2 */}
@@ -103,7 +131,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative lg:-right-20 w-[70%]">
-              <img className="lg:w-[800px] w-full" src="Meranto.png" alt="" />
+              <img
+                style={{
+                  transform: `translate(${position.x}px, ${position.y}px)`,
+                }}
+                className="lg:w-[800px] w-full"
+                src="Meranto.png"
+                alt=""
+              />
             </div>
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
@@ -128,7 +163,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative lg:-right-60 w-[70%]">
-              <img className="lg:p-0 p-6 w-[600px] z-[0]" src="Intellect.ai.png" alt="" />
+              <img
+                style={{
+                  transform: `translate(${position.x}px, ${position.y}px)`,
+                }}
+                className="lg:p-0 p-6 w-[600px] z-[0]"
+                src="Intellect.ai.png"
+                alt=""
+              />
             </div>
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
@@ -153,7 +195,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative lg:-right-50 w-[70%]">
-              <img className="lg:p-0 p-6 lg:w-[700px] w-full z-[0]" src="Info-Kuliner.png" alt="" />
+              <img
+                style={{
+                  transform: `translate(${position.x}px, ${position.y}px)`,
+                }}
+                className="lg:p-0 p-6 lg:w-[700px] w-full z-[0]"
+                src="Info-Kuliner.png"
+                alt=""
+              />
             </div>
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
@@ -178,7 +227,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative lg:-right-50 w-[70%]">
-              <img className="lg:p-0 p-6 lg:w-[600px] w-full z-[0]" src="BISINDO.png" alt="" />
+              <img
+                style={{
+                  transform: `translate(${position.x}px, ${position.y}px)`,
+                }}
+                className="lg:p-0 p-6 lg:w-[600px] w-full z-[0]"
+                src="BISINDO.png"
+                alt=""
+              />
             </div>
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
