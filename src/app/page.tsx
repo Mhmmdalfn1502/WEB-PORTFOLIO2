@@ -29,7 +29,7 @@ export default function Home() {
       {/* Header */}
       <div className="head flex lg:flex-row flex-col gap-6 justify-center items-center bg-[#F5F4FF]">
         <div className="HeadLeft flex flex-col">
-          <div className="static flex justify-start items-center px-6 w-full lg:h-[200px] h-[140px] border-[#272727] transition-all duration-700 hover:bg-[#272727] border-2">
+          <div className="static flex justify-start items-center px-6 w-full lg:h-[200px] h-[140px] border-[#272727] hover:border-[#F5F4FF] transition-all duration-700 hover:bg-[#272727] border-2">
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-23 left-0"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-110 left-47"></div>
             <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-198 left-93"></div>
@@ -109,9 +109,6 @@ export default function Home() {
           </div>
           <div className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[530px] w-[300px] lg:h-[510px] h-[330px] bg-gradient-to-bl from-[#272727]/10 pointer-events-none"></div>
           <img
-            style={{
-              transform: `translate(${position.x}px, ${position.y}px)`,
-            }}
             className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50"
             src="Kutip.png"
             alt=""

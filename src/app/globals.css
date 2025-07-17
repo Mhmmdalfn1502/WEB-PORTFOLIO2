@@ -30,7 +30,7 @@
 .paragraph span {
   opacity: 0;
   display: block;
-  animation: reveal 0.5s forwards;
+  animation: reveal 1s forwards;
 }
 
 @keyframes reveal {
@@ -89,4 +89,13 @@
 
 .stroke-text {
   -webkit-text-stroke: 0.2px #272727;
+}
+
+/* globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -16,7 +18,7 @@ export default function Works() {
   let lastScrollY = 0;
 
   useEffect(() => {
-     const handleScroll = () => {
+    const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const direction = currentScrollY > lastScrollY ? 1 : -1;
 
@@ -35,7 +37,7 @@ export default function Works() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-    const repeatedText = "SHOW ME WHAT YOU'VE GOT-".repeat(10); // teks berulang
+  const repeatedText = "SHOW ME WHAT YOU'VE GOT-".repeat(10); // teks berulang
   const subText = "GRAPHIC DESIGN-UI/UX-FRONTEND WEB DEVELOPER-".repeat(6);
 
   useEffect(() => {
@@ -47,8 +49,39 @@ export default function Works() {
     { title: "Intellect.ai", desc: "lorem Ipsum lorem ipsum lorem ipsum", image: "intellect.png" },
     { title: "Hand Recognition", desc: "lorem Ipsum lorem ipsum lorem ipsum", image: "signlanguage.png" },
     { title: "Hotel Reservation", desc: "lorem Ipsum lorem ipsum lorem ipsum", image: "hotel.png" },
-    { title: "Project 5", desc: "lorem Ipsum lorem ipsum lorem ipsum", image: "meranto2.png" },
   ];
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0, transition: { duration: 0.8 } });
+    } else {
+      controls.start({ opacity: 0, y: 40 });
+    }
+  }, [inView, controls]);
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollBy({
+          left: 220, // 200px image + 20px gap
+          behavior: "smooth",
+        });
+
+        // Jika sudah hampir di akhir, scroll balik ke awal
+        const maxScroll = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
+        if (scrollRef.current.scrollLeft >= maxScroll - 10) {
+          scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        }
+      }
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="w-screen bg-[#F5F4FF]">
@@ -60,31 +93,21 @@ export default function Works() {
           <span className="bg-[#272727] lg:text-[60px] text-[24px] px-2 py-2 lg:h-[70px] h-[40px] flex items-center text-center text-[#F5F4FF] font-extrabold uppercase">responsive, and user-</span>
           <span className="lg:text-[60px] text-[24px] text-center text-[#272727] font-extrabold uppercase">friendly websites.</span>
         </div>
-        <button onClick={() => {
-    const el = document.getElementById("contact");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  }} className="px-4 py-2 rounded-sm border-2 border-[#272727] hover:px-6 transition-all duration-300">Let's start a project together</button>
+        <button
+          onClick={() => {
+            const el = document.getElementById("contact");
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="px-4 py-2 rounded-sm border-2 border-[#272727] hover:px-6 transition-all duration-300"
+        >
+          Let's start a project together
+        </button>
       </div>
-
-    <div className="overflow-hidden w-full lg:py-0 lg:pb-30 pb-10 bg-[#F5F4FF]">
-      <div
-        ref={marqueeRef}
-        data-x="0"
-        className="flex flex-col items-center justify-center lg:h-[120px] h-[70px] gap-4 transition-transform duration-75 ease-linear whitespace-nowrap"
-      >
-        <span className="lg:text-[70px] text-[30px] font-extrabold -tracking-widest lg:leading-10 leading-4 text-transparent stroke-text">
-          {repeatedText}
-        </span>
-        <span className="lg:text-[70px] text-[30px] font-extrabold -tracking-widest lg:leading-10 leading-4 text-[#272727]">
-          {subText}
-        </span>
-      </div>
-    </div>
 
       {/* Project Section */}
-      <div className="relative w-full bg-[#272727] py-10 px-4 lg:px-28">
+      <div className="relative w-full bg-[#272727] py-10 px-4 lg:px-28 z-10">
         <span className="text-[#F5F4FF] text-[40px] font-extrabold text-center block mb-10">MY PROJECTS</span>
 
         {/* Tombol Navigasi */}
@@ -127,6 +150,53 @@ export default function Works() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      <div className="relative w-full h-[180px] lg:h-[300px] lg:my-20 my-10 bg-[#F5F4FF] overflow-hidden">
+        {/* Teks pertama - miring ke kanan */}
+        <div className="absolute inset-0 flex items-center justify-center rotate-6 z-10" ref={marqueeRef}>
+          <div className="flex flex-col items-center justify-center whitespace-nowrap leading-14">
+            <span className="lg:text-[70px] text-[30px] font-extrabold -tracking-widest text-transparent stroke-text">{repeatedText}</span>
+            <span className="lg:text-[70px] text-[30px] font-extrabold -tracking-widest text-[#272727]">{subText}</span>
+          </div>
+        </div>
+
+        {/* Teks kedua - miring ke kiri */}
+        <div className="absolute inset-0 flex items-center justify-center -rotate-6 z-0 opacity-70" ref={marqueeRef}>
+          <div className="flex flex-col items-center justify-center whitespace-nowrap leading-14">
+            <span className="lg:text-[70px] text-[30px] font-extrabold -tracking-widest text-transparent stroke-text">{repeatedText}</span>
+            <span className="lg:text-[70px] text-[30px] font-extrabold -tracking-widest text-[#272727]">{subText}</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex w-full lg:flex-row flex-col gap-6 items-center justify-between lg:px-28 px-6 pb-30">
+        <div className="flex flex-col lg:w-[40%] gap-2 lg:items-start items-center">
+          <span className="font-medium tracking-[10px] text-[16px] text-[#808080] text-center">VISUAL COMMUNICATION</span>
+          <span className="font-extrabold -tracking-widest text-[30px] lg:text-start text-center text-[#272727] uppercase">Planning an Event? Let Me Handle the Design!</span>
+          <div className="flex flex-col">
+            <span className="font-medium tracking-widest text-[16px] lg:text-start text-center text-[#272727]">Organizing an event and need eye-catching visuals?</span>
+            <span className="font-medium text-[16px] lg:text-start text-center text-[#272727]">
+              From logos to posters to invitation cards — I’ve got you covered. You can stay focused on the event itself, and I’ll take care of the design side!
+            </span>
+          </div>
+        </div>
+
+        <div className="overflow-hidden lg:w-[60%] w-full" ref={ref}>
+          <div className="flex gap-4 overflow-x-auto scroll-smooth max-w-full px-4 py-6 no-scrollbar">
+            {["GoalsPoster.png", "JamesPoster.png", "RBYPoster.png", "RBY2FLYER.png", "HarvestPoster.png"].map((src, index) => (
+              <motion.img
+                key={index}
+                src={`dkv/${src}`}
+                alt=""
+                className="w-[160px] sm:w-[180px] md:w-[200px] flex-shrink-0 hover:scale-110 hover:shadow-xl transition-all duration-700 rounded-sm"
+                initial={{ opacity: 0, y: 40 }}
+                animate={controls}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   );

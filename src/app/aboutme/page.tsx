@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import ScrambleText from "@/components/ScrambleText";
 
 const experiences = [
   {
@@ -40,7 +41,6 @@ const experiences = [
   },
 ];
 
-
 export default function AboutMe() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -74,15 +74,20 @@ export default function AboutMe() {
         <div className="absolute pb-10 inset-0 bg-gradient-to-t from-white via-white/10 to-transparent pointer-events-none" />
       </div>
 
+      {/* <h1 className="absolute top-40 text-[180px] font-extrabold text-[#272727] mix-blend-difference pointer-events-none z-30 select-none">ABOUT</h1> */}
+
       <div className="relative z-30 flex flex-col items-center mt-10 text-[#272727] px-6 lg:px-0">
         <p className="text-[#808080] mt-4 max-w-xl text-center tracking-widest">Let's get to know each other</p>
 
-        <div className="flex flex-row justify-between items-center w-screen px-23 mt-10">
+        <div className="flex flex-row lg:justify-between justify-center gap-6 items-center w-screen px-23 mt-10">
           <a className="text-[16px] tracking-wider" href="https://www.instagram.com/mhmmdalfn_1502/">
-            <span>Instagram</span>
+            <ScrambleText text="Instagram" />
+          </a>
+          <a href="/CV-MuhammadAlfan.pdf" download className="text-[16px] text-center tracking-wider font-bold">
+            <ScrambleText text="My Resume" />
           </a>
           <a className="text-[16px] tracking-wider" href="https://www.linkedin.com/in/muhammad-alfan1502/">
-            <span>Linkedin</span>
+            <ScrambleText text="Linkedin" />
           </a>
         </div>
 
@@ -99,36 +104,31 @@ export default function AboutMe() {
         </div>
       </div>
 
-<div className="flex flex-col w-full lg:px-23 px-4 mt-10 gap-4">
-  <div>
-    <span className="text-[40px] text-[#272727] font-extrabold">My Experience</span>
-    <hr className="mt-4" />
-  </div>
+      <div className="flex flex-col w-full lg:px-23 px-4 mt-10 gap-4">
+        <div>
+          <span className="text-[40px] text-[#272727] font-extrabold">My Experience</span>
+          <hr className="mt-4" />
+        </div>
 
-  {experiences.map((exp, index) => (
-    <motion.div
-      key={index}
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.2 }}
-    >
-      <div className="flex flex-row justify-between items-center gap-2">
-        <div className="flex flex-col">
-          <span className="text-[#272727] text-[14px] lg:text-[20px] font-extrabold">{exp.title}</span>
-          {exp.details.map((line, i) => (
-            <span key={i} className="text-[#808080] text-[12px] lg:text-[16px] font-medium">{line}</span>
-          ))}
-        </div>
-        <div className="text-end">
-          <span className="text-[#272727] text-[12px] lg:text-[16px] -tracking-widest">{exp.date}</span>
-        </div>
+        {experiences.map((exp, index) => (
+          <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.2 }}>
+            <div className="flex flex-row justify-between items-center gap-2">
+              <div className="flex flex-col">
+                <span className="text-[#272727] text-[14px] lg:text-[20px] font-extrabold">{exp.title}</span>
+                {exp.details.map((line, i) => (
+                  <span key={i} className="text-[#808080] text-[12px] lg:text-[16px] font-medium">
+                    {line}
+                  </span>
+                ))}
+              </div>
+              <div className="text-end">
+                <span className="text-[#272727] text-[12px] lg:text-[16px] -tracking-widest">{exp.date}</span>
+              </div>
+            </div>
+            <hr className="mt-4" />
+          </motion.div>
+        ))}
       </div>
-      <hr className="mt-4" />
-    </motion.div>
-  ))}
-</div>
-
     </main>
   );
 }
