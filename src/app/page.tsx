@@ -1,7 +1,7 @@
 "use client";
 
-import { AiOutlineSwapRight } from "react-icons/ai";
 import "animate.css";
+import { AiOutlineSwapRight } from "react-icons/ai";
 import { useRef, useEffect, useState } from "react";
 
 export default function Home() {

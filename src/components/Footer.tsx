@@ -43,7 +43,7 @@ export default function Footer() {
 
         <div className="flex flex-col justify-between gap-10 lg:items-end items-center lg:pt-0 pt-10">
           <div className="nav flex flex-row lg:gap-10 gap-4 items-center">
-            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="">
+            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="/">
               HOME
             </a>
             <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="/aboutme">
@@ -69,10 +69,10 @@ export default function Footer() {
                 <a href="https://github.com/Mhmmdalfn1502">
                   <ScrambleText text="Github" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
                 </a>
-                <span>|</span>
-                <a href="#">
+                {/* <span>|</span> */}
+                {/* <a href="#">
                   <ScrambleText text="X" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
-                </a>
+                </a> */}
               </div>
             </div>
             <span className="lg:text-[16px] text-[10px] lg:text-end text-center text-[#272727] tracking-wider">©2025 Muhammad Alfan. All Rights Reserved.</span>
