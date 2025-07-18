@@ -43,13 +43,13 @@ export default function Footer() {
 
         <div className="flex flex-col justify-between gap-10 lg:items-end items-center lg:pt-0 pt-10">
           <div className="nav flex flex-row lg:gap-10 gap-4 items-center">
-            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="/">
+            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2 transition-all duration-300  hover:border-[#272727]" href="/">
               HOME
             </a>
-            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="/aboutme">
+            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2 transition-all duration-300  hover:border-[#272727]" href="/aboutme">
               ABOUT ME
             </a>
-            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2  hover:border-[#272727]" href="/works">
+            <a className="text-[16px] text-[#272727] tracking-wider border-b-2 border-[#F5F4FF] hover:border-b-2 transition-all duration-300  hover:border-[#272727]" href="/works">
               WORKS
             </a>
           </div>

@@ -92,7 +92,7 @@ export default function Home() {
 
             <div className="flex flex-row justify-between items-end mt-8 ">
               <span className="text-[20px] text-[#272727] lg:w-[600px]">_______</span>
-              <a href="#project2" className="flex flex-row gap-2 items-center scroll-smooth">
+              <a href="/project2" className="flex flex-row gap-2 items-center scroll-smooth">
                 <span className="text-[16px] tracking-wider">Let's see</span>
                 <AiOutlineSwapRight size={20} color="#272727" />
               </a>
@@ -108,11 +108,7 @@ export default function Home() {
             {" "}
           </div>
           <div className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[530px] w-[300px] lg:h-[510px] h-[330px] bg-gradient-to-bl from-[#272727]/10 pointer-events-none"></div>
-          <img
-            className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50"
-            src="Kutip.png"
-            alt=""
-          />
+          <img className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
         </div>
 
         {/* Project Card 2 */}
@@ -125,6 +121,9 @@ export default function Home() {
               <div className="flex flex-col lg:gap-2 mt-6">
                 <span className="lg:text-[16px] text-[10px] text-[#272727] font-bold">Build with: Figma</span>
                 <span className="lg:text-[16px] text-[10px] text-[#272727] font-bold">Project: 2024</span>
+                <a href="https://www.figma.com/proto/niCxt1daRq3DUKk3nsYTQC/Meranto-Mobile-App?page-id=0%3A1&node-id=442-1140&starting-point-node-id=448%3A1142&t=wTNWCCcsXbh7Sl9w-1" className="lg:text-[16px] text-[10px] text-[#F5F4FF] font-medium bg-[#272727] lg:w-[134px] w-[90px] px-2">
+                  View Project
+                </a>
               </div>
             </div>
             <div className="relative lg:-right-20 w-[70%]">

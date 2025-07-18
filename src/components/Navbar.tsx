@@ -90,10 +90,10 @@ export default function Navbar() {
           <a href="https://github.com/Mhmmdalfn1502">
             <ScrambleText text="Github" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
           </a>
-          <span>|</span>
+          {/* <span>|</span>
           <a href="#">
             <ScrambleText text="X" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
-          </a>
+          </a> */}
         </div>
       </div>
     </>
