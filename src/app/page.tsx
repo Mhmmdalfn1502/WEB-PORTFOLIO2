@@ -3,6 +3,7 @@
 import "animate.css";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import { useRef, useEffect, useState } from "react";
+import ScrambleText from "@/components/ScrambleText";
 
 export default function Home() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -24,6 +25,14 @@ export default function Home() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
+
+  const sectionReff = useRef<HTMLDivElement>(null);
+  const project2Ref = useRef<HTMLDivElement>(null);
+
+  const scrollToProject2 = () => {
+    project2Ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+  };
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#F5F4FF] lg:pt-36 pt-20">
       {/* Header */}
@@ -66,12 +75,12 @@ export default function Home() {
 
       <div className="flex flex-row justify-between items-center lg:px-28 px-4 w-[100%] lg:mt-18 mt-6">
         <div className="link flex flex-row gap-2 justify-center items-center text-[#272727] text-[16px]">
-          <a className="tracking-wider" href="https://www.linkedin.com/in/muhammad-alfan1502/">
-            Linkedin
+          <a href="https://www.linkedin.com/in/muhammad-alfan1502/">
+            <ScrambleText text="Linkedin" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
           </a>
           <span>|</span>
-          <a className="tracking-wider" href="https://github.com/Mhmmdalfn1502">
-            Github
+          <a href="https://github.com/Mhmmdalfn1502">
+            <ScrambleText text="Github" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
           </a>
         </div>
         <span className="tracking-wider">-Portfolio</span>
@@ -81,7 +90,7 @@ export default function Home() {
       {/* Section 2 Project */}
       <div ref={sectionRef} className="w-screen lg:h-screen flex overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory scrollbar-hidden touch-auto lg:pt-0 pt-16">
         {/* First sec */}
-        <div className="flex-shrink-0 snap-start w-screen h-full px-4 lg:px-28 relative pointer-events-none">
+        <div className="flex-shrink-0 snap-start w-screen h-full px-4 lg:px-28 relative">
           <div className="flex flex-col lg:justify-center justify-between h-full">
             <div className="flex flex-col">
               <span className="lg:text-[128px] text-[64px] leading-tight text-[#272727] font-extrabold">PORTFOLIO</span>
@@ -90,10 +99,10 @@ export default function Home() {
               <span className="lg:text-[20px] text-[14px] text-[#272727] lg:w-[600px] w-[250px]">Take a deeper look into my complete portfolio showcasing diverse digital solution.</span>
             </div>
 
-            <div className="flex flex-row justify-between items-end mt-8 ">
+            <div className="flex flex-row justify-between items-end mt-8">
               <span className="text-[20px] text-[#272727] lg:w-[600px]">_______</span>
-              <a href="/project2" className="flex flex-row gap-2 items-center scroll-smooth">
-                <span className="text-[16px] tracking-wider">Let's see</span>
+              <a onClick={scrollToProject2} className="z-30 flex flex-row gap-2 items-center scroll-smooth">
+                <ScrambleText text="Let's see" className="text-[16px] tracking-wider" />
                 <AiOutlineSwapRight size={20} color="#272727" />
               </a>
             </div>
@@ -107,12 +116,12 @@ export default function Home() {
           >
             {" "}
           </div>
-          <div className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[530px] w-[300px] lg:h-[510px] h-[330px] bg-gradient-to-bl from-[#272727]/10 pointer-events-none"></div>
-          <img className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
+          <div className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[530px] w-[300px] lg:h-[510px] h-[330px] bg-gradient-to-bl from-[#272727]/10 pointer-events-none z-0"></div>
+          <img className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50 z-0" src="Kutip.png" alt="" />
         </div>
 
         {/* Project Card 2 */}
-        <div id="project2" className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
+        <div ref={project2Ref} id="project2" className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
           <div className="flex lg:flex-row flex-col items-center h-full lg:w-full w-[350px]">
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">TRAVEL APPLICATION</span>
@@ -121,7 +130,10 @@ export default function Home() {
               <div className="flex flex-col lg:gap-2 mt-6">
                 <span className="lg:text-[16px] text-[10px] text-[#272727] font-bold">Build with: Figma</span>
                 <span className="lg:text-[16px] text-[10px] text-[#272727] font-bold">Project: 2024</span>
-                <a href="https://www.figma.com/proto/niCxt1daRq3DUKk3nsYTQC/Meranto-Mobile-App?page-id=0%3A1&node-id=442-1140&starting-point-node-id=448%3A1142&t=wTNWCCcsXbh7Sl9w-1" className="lg:text-[16px] text-[10px] text-[#F5F4FF] font-medium bg-[#272727] lg:w-[134px] w-[90px] px-2">
+                <a
+                  href="https://www.figma.com/proto/niCxt1daRq3DUKk3nsYTQC/Meranto-Mobile-App?page-id=0%3A1&node-id=442-1140&starting-point-node-id=448%3A1142&t=wTNWCCcsXbh7Sl9w-1"
+                  className="lg:text-[16px] text-[10px] text-[#F5F4FF] font-medium bg-[#272727] lg:w-[134px] w-[90px] px-2"
+                >
                   View Project
                 </a>
               </div>

@@ -5,15 +5,23 @@ import { FaPaperPlane } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Footer() {
-  const [isSending, setIsSending] = useState(false);
+const [isSending, setIsSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    setIsSending(true);
-    // Lanjutkan submit otomatis setelah delay animasi
-    setTimeout(() => {
-      e.currentTarget.submit();
-    }, 2000); // waktu animasi pesawat selesai
-  };
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault(); // mencegah submit default agar kita bisa kontrol sendiri
+  setIsSending(true);
+
+  const form = e.currentTarget;
+
+  // Lanjutkan submit otomatis setelah delay animasi
+  setTimeout(() => {
+    form.submit();     // submit form ke Formspree
+    form.reset();      // kosongkan input form
+    setIsSending(false); // reset tombol ke kondisi awal (opsional)
+  }, 2000); // delay 2 detik untuk animasi pesawat
+};
+
+  
 
   return (
     <footer className="bg-[#F5F4FF] ">
