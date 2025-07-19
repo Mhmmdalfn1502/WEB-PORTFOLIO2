@@ -17,8 +17,6 @@ export default function Works() {
   const marqueeRef = useRef<HTMLDivElement>(null);
   let lastScrollY = 0;
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -46,36 +44,33 @@ export default function Works() {
     setSwiperReady(true);
   }, []);
 
-const projects = [
-  {
-    title: "Meranto",
-    desc: "An AI-based application that helps travelers discover the best destinations easily and quickly.",
-    image: "meranto2.png",
-  },
-  {
-    title: "Intellect.ai",
-    desc: "An AI-powered platform designed to simplify learning and provide easy access to educational content.",
-    image: "intellect.png",
-  },
-  {
-    title: "Hand Recognition",
-    desc: "A system for detecting and classifying Indonesian Sign Language (BISINDO) using AI models.",
-    image: "signlanguage.png",
-  },
-  {
-    title: "Hotel Reservation",
-    desc: "A hotel booking website with search, filter, and user-friendly reservation features.",
-    image: "hotel.png",
-  },
-  {
-    title: "Info-Kuliner",
-    desc: "A culinary information app featuring popular food recommendations and nearby restaurant locations.",
-    image: "Info-Kuliner2.png",
-  },
-];
-
-
-  
+  const projects = [
+    {
+      title: "Meranto",
+      desc: "An AI-based application that helps travelers discover the best destinations easily and quickly.",
+      image: "meranto2.png",
+    },
+    {
+      title: "Intellect.ai",
+      desc: "An AI-powered platform designed to simplify learning and provide easy access to educational content.",
+      image: "intellect.png",
+    },
+    {
+      title: "Hand Recognition",
+      desc: "A system for detecting and classifying Indonesian Sign Language (BISINDO) using AI models.",
+      image: "signlanguage.png",
+    },
+    {
+      title: "Hotel Reservation",
+      desc: "A hotel booking website with search, filter, and user-friendly reservation features.",
+      image: "hotel.png",
+    },
+    {
+      title: "Info-Kuliner",
+      desc: "A culinary information app featuring popular food recommendations and nearby restaurant locations.",
+      image: "Info-Kuliner2.png",
+    },
+  ];
 
   // DKV Section
 
@@ -170,8 +165,12 @@ const projects = [
             <SwiperSlide key={index}>
               <div className="relative h-[500px] overflow-hidden rounded-2xl group cursor-pointer">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-all duration-1000 ease-in-out group-hover:scale-105 lg:grayscale lg:group-hover:grayscale-0" />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#272727]/50 via-[#272727]/30 to-[#272727]/0 text-white py-4 px-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h3 className="text-lg font-semibold transition duration-500 translate-y-4 group-hover:translate-y-0">{project.title}</h3>
+                <div
+                  className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#272727]/50 via-[#272727]/30 to-[#272727]/0 text-white py-4 px-4 text-center
+  opacity-100 lg:opacity-0 lg:group-hover:opacity-100
+  transition-opacity duration-500"
+                >
+                  <span className="text-lg font-semibold transition duration-500 translate-y-4 group-hover:translate-y-0">{project.title}</span>
                   <p className="text-sm">{project.desc}</p>
                 </div>
               </div>
@@ -181,10 +180,9 @@ const projects = [
       </div>
 
       <div className="relative w-full h-[180px] lg:h-[300px] lg:my-40 my-10 bg-[#F5F4FF] overflow-hidden">
-        {/* Teks pertama - miring ke kanan */}
         <div className="absolute inset-0 flex items-center justify-center rotate-5 z-10" ref={marqueeRef}>
           <div className="flex flex-col items-center justify-center whitespace-nowrap lg:leading-18 leading-6">
-            <span className="lg:text-[90px] text-[30px] font-extrabold -tracking-widest text-transparent stroke-text">{repeatedText}</span>
+            <span className="lg:text-[90px] text-[30px] font-extrabold -tracking-widest text-[#F5F4FF] stroke-text">{repeatedText}</span>
             <span className="lg:text-[90px] text-[30px] font-extrabold -tracking-widest text-[#272727]">{subText}</span>
           </div>
         </div>
