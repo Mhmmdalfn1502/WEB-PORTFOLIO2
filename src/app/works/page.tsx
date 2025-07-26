@@ -210,7 +210,7 @@ export default function Works() {
 
         <div className="overflow-hidden lg:w-[60%] w-full" ref={ref}>
           <div className="flex gap-4 overflow-x-auto scroll-smooth max-w-full px-4 py-6 no-scrollbar">
-            {["GoalsPoster.png", "JamesPoster.png", "RBYPoster.png", "RBY2FLYER.png", "HarvestPoster.png"].map((src, index) => (
+            {["GoalsPoster.png", "LookUpPoster.png", "EnjoyTheWorldPoster.png", "JamesPoster.png", "RBYPoster.png", "RBY2FLYER.png", "HarvestPoster.png", "Illustrator.png"].map((src, index) => (
               <motion.img
                 key={index}
                 src={`dkv/${src}`}
