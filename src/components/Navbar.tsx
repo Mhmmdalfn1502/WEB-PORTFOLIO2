@@ -39,7 +39,7 @@ export default function Navbar() {
 
       {/* Dropdown Menu */}
       <div
-        className={`fixed top-[60px] lg:top-[100px] left-0 w-full bg-[#F5F4FF] z-40 px-6 lg:px-23 transition-all duration-300 ease-in-out overflow-hidden${
+        className={`fixed top-[60px] lg:top-[100px] left-0 w-full bg-[#F5F4FF] z-40 px-6 lg:px-23 transition-all duration-1000 ease-in-out overflow-hidden${
           showMenu ? "max-h-[500px] py-4 opacity-100 drop-shadow-xl" : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >

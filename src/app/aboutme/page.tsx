@@ -36,7 +36,7 @@ const experiences = [
   },
   {
     title: "ISC Web Design",
-    details: ["2nd Place Winner in the Web Design Competition"],
+    details: ["2nd Place Winner in the Web Design Competition | Universitas Kristen Duta Wacana"],
     date: "2023",
   },
 ];
