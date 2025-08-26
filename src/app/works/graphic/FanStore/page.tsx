@@ -8,6 +8,12 @@ export default function graphic() {
             <hr className="w-[100%] h-[1px] bg-[#272727]" />
             <div className="grid grid-cols-1 gap-4 py-6 lg:py-10">
                 <div className="">
+                    <img className="" src="/DGraphic/FanStore/Slide1.png" alt="" />
+                </div>
+                <div className="">
+                    <img className="" src="/DGraphic/FanStore/Slide2.png" alt="" />
+                </div>
+                <div className="">
                     <img className="" src="/DGraphic/FanStore/Slide3.png" alt="" />
                 </div>
                 <div className="">
