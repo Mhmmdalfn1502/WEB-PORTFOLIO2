@@ -21,9 +21,8 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   }, 2000); // delay 2 detik untuk animasi pesawat
 };
 
-  
 
-  return (
+ return (
     <footer className="bg-[#F5F4FF] ">
       <div className="marquee-wrapper">
         <span className="marquee-content lg:text-[128px] text-[82px] text-[#272727] font-extrabold">HELLO! HELLO! HELLO! HELLO! HELLO! HELLO!</span>
@@ -66,7 +65,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
               <span className="text-[16px] text-[#F5F4FF] w-[276px] px-2 tracking-wider bg-[#272727]">Chase the vision with me.</span>
               <span className="text-[16px] text-[#272727] tracking-wider font-bold">Follow me.</span>
               <div className="flex flex-row gap-2 items-center">
-                <a href="https://www.instagram.com/mhmmdalfn_1502/">
+                <a href="https://www.instagram.com/mhmmdalfn_1502/">  
                   <ScrambleText text="Instagram" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
                 </a>
                 <span>|</span>

@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: "Fansss.",
+  title: "Muhammad Alfan | Portfolio",
   description: "Website portfolio pribadi",
   icons: {
     icon: "/favicon.png", // file ada di folder public

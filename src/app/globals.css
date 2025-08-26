@@ -10,7 +10,7 @@
   --color-secondary: #808080;
   --color-white: #F5F4FF;
 }
-
+  
 .dashed-custom {
   border-style: dashed;
   border-color: #272727;

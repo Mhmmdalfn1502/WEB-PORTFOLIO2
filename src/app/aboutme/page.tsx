@@ -106,7 +106,7 @@ export default function AboutMe() {
 
       <div className="flex flex-col w-full lg:px-23 px-4 mt-10 gap-4">
         <div>
-          <span className="text-[40px] text-[#272727] font-extrabold">My Experience</span>
+          <span className="text-[40px] text-[#272727] font-extrabold">My Experiences</span>
           <hr className="mt-4" />
         </div>
 

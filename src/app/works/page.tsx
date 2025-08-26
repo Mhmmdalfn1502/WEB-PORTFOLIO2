@@ -7,6 +7,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import ScrambleText from "@/components/ScrambleText";
+import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -196,7 +197,7 @@ export default function Works() {
         </div> */}
       </div>
 
-      <div className="flex w-full lg:flex-row flex-col gap-6 items-center justify-between lg:px-28 px-6 pb-30">
+      <div className="flex w-full lg:flex-row flex-col gap-6 items-center justify-between lg:px-28 px-6 pb-4 lg:pb-30">
         <div className="flex flex-col lg:w-[40%] gap-2 lg:items-start items-center">
           <span className="font-medium tracking-[10px] text-[16px] text-[#808080] text-center">VISUAL COMMUNICATION</span>
           <span className="font-extrabold -tracking-widest text-[30px] lg:text-start text-center text-[#272727] uppercase">Planning an Event? Let Me Handle the Design!</span>
@@ -223,6 +224,38 @@ export default function Works() {
             ))}
           </div>
         </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10 px-4 lg:px-22">
+        <Link href="/works/graphic/FanStore">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/FanStore/Slide16.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/Antuisi">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/AntuisiStudio/Compro-01.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/InfoKuliner">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/InfoKuliner/Slide1.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/HotelReservation">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/HotelReservation/Header.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/Meranto">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Meranto/Slide7.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/Sony">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Sony/Header.png" alt="" />
+          </div>
+        </Link>
       </div>
     </main>
   );
