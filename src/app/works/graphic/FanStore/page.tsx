@@ -8,46 +8,46 @@ export default function graphic() {
             <hr className="w-[100%] h-[1px] bg-[#272727]" />
             <div className="grid grid-cols-1 gap-4 py-6 lg:py-10">
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide3.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide3.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide4.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide4.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide5.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide5.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide6.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide6.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide7.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide7.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide8.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide8.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide9.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide9.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide10.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide10.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide11.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide11.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide12.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide12.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide13.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide13.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide14.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide14.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide15.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide15.png" alt="" />
                 </div>
                 <div className="">
-                    <img className="" src="/DGraphic/FanStore/Slide16.PNG" alt="" />
+                    <img className="" src="/DGraphic/FanStore/Slide16.png" alt="" />
                 </div>
             </div>
         </div>
