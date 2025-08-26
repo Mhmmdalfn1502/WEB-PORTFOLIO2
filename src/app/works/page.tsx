@@ -256,6 +256,16 @@ export default function Works() {
             <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Sony/Header.png" alt="" />
           </div>
         </Link>
+        <Link href="/works/graphic/DaftenPerfume">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/DaftenPerfume/Slide3.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/ArcanePerfume">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/ArcanePerfume/GUIDE CARD.png" alt="" />
+          </div>
+        </Link>
       </div>
     </main>
   );
