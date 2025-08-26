@@ -228,7 +228,7 @@ export default function Works() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10 px-4 lg:px-22">
         <Link href="/works/graphic/FanStore">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/FanStore/Slide16.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/FanStore/Slide16.PNG" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Antuisi">
@@ -253,7 +253,7 @@ export default function Works() {
         </Link>
         <Link href="/works/graphic/Sony">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Sony/Header.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Sony/Header.PNG" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/DaftenPerfume">
