@@ -107,6 +107,10 @@ export default function Works() {
     return () => clearInterval(interval);
   }, []);
 
+  const works = [
+    { slug: "" }
+  ]
+
   return (
     <main className="w-screen bg-[#F5F4FF]">
       {/* Hero Section */}
