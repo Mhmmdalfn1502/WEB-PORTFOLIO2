@@ -60,7 +60,7 @@ export default function Home() {
               Hello, I'm Muhammad Alfan
             </span>
             <span style={{ animationDelay: "0.6s", animationFillMode: "forwards", animationName: "reveal", animationDuration: "0.5s" }} className="text-[40px] text-[#272727] font-bold leading-tight">
-              I'm UI/UX Designer, & Front-end Web Developer
+              I'm Graphic, UI/UX Designer, & Front-end Web Developer
             </span>
           </div>
 

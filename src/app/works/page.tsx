@@ -229,45 +229,51 @@ export default function Works() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10 px-4 lg:px-22">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10 px-4 lg:px-6">
         <Link href="/works/graphic/FanStore">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/FanStore/Slide16.png" alt="" />
+            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/FanStore/Slide16.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/Tara">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Tara/Branding-17.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Antuisi">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/AntuisiStudio/Compro-01.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/AntuisiStudio/Compro-01.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/InfoKuliner">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/InfoKuliner/Slide1.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/InfoKuliner/Slide1.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/HotelReservation">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/HotelReservation/Header.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/HotelReservation/Header.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Meranto">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Meranto/Slide7.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Meranto/Slide7.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Sony">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/Sony/Header.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Sony/Header.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/DaftenPerfume">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/DaftenPerfume/Slide3.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/DaftenPerfume/Slide3.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/ArcanePerfume">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover" src="/DGraphic/ArcanePerfume/GUIDE CARD.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/ArcanePerfume/GUIDE CARD.png" alt="" />
           </div>
         </Link>
       </div>
