@@ -43,8 +43,10 @@ export default function Home() {
               <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:-top-28 -top-20 -left-8"></div>
               <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:-top-28 -top-20 lg:left-80 left-38"></div>
               <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:-top-28 -top-20 lg:left-166 left-84"></div>
-              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 
-              -left-8"></div>
+              <div
+                className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 
+              -left-8"
+              ></div>
               <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 lg:left-80 left-38"></div>
               <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 lg:left-166 left-84"></div>
             </div>
@@ -77,16 +79,18 @@ export default function Home() {
       </div>
 
       <div className="flex flex-row justify-between items-center lg:px-28 px-4 w-[100%] lg:mt-18 mt-6">
-        <div className="link flex flex-row gap-2 justify-center items-center text-[#272727] text-[16px]">
-          <a href="https://www.linkedin.com/in/muhammad-alfan1502/">
-            <ScrambleText text="Linkedin" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
-          </a>
-          <span>|</span>
+        <div className="link flex lg:flex-row flex-col gap-2 justify-center items-start text-[#272727] text-[16px]">
+          <div>
+            <a href="https://www.linkedin.com/in/muhammad-alfan1502/">
+              <ScrambleText text="Linkedin" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
+            </a>
+            <span>|</span>
+          </div>
           <a href="https://github.com/Mhmmdalfn1502">
             <ScrambleText text="Github" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
           </a>
         </div>
-      <img onClick={scrollToSection} style={{ animationDuration: "1.5s" }} className="absolute lg:-bottom-4 md:-bottom-2 bottom-0 lg:w-[100px] w-[70px] lg:h-[100px] h-[70px] animate-bounce duration-700 cursor-pointer" src="Letsseemore.png" alt="See more" />
+        <img onClick={scrollToSection} style={{ animationDuration: "1.5s" }} className="lg:w-[100px] w-[70px] lg:h-[100px] h-[70px] animate-bounce duration-700 cursor-pointer" src="Letsseemore.png" alt="See more" />
         <span className="tracking-wider">-Portfolio</span>
       </div>
 
