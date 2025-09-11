@@ -36,15 +36,18 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#F5F4FF] lg:pt-36 pt-20">
       {/* Header */}
-      <div className="head flex lg:flex-row flex-col gap-6 justify-center items-center bg-[#F5F4FF]">
+      <div className="head flex lg:flex-row md:flex-row flex-col gap-6 justify-center items-center bg-[#F5F4FF]">
         <div className="HeadLeft flex flex-col">
           <div className="static flex justify-start items-center px-6 w-full lg:h-[200px] h-[140px] border-[#272727] hover:border-[#F5F4FF] transition-all duration-700 hover:bg-[#272727] border-2">
-            <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-23 left-0"></div>
-            <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-110 left-47"></div>
-            <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-33 top-18 lg:left-198 left-93"></div>
-            <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-83 top-52 lg:left-23 left-0"></div>
-            <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-83 top-52 lg:left-110 left-47"></div>
-            <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-83 top-52 lg:left-198 left-93"></div>
+            <div className="absolute">
+              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:-top-28 -top-20 -left-8"></div>
+              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:-top-28 -top-20 lg:left-80 left-38"></div>
+              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:-top-28 -top-20 lg:left-166 left-84"></div>
+              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 
+              -left-8"></div>
+              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 lg:left-80 left-38"></div>
+              <div className="absolute w-[20px] h-[20px] border-1 border-[#272727] lg:top-22 top-15 lg:left-166 left-84"></div>
+            </div>
             <span style={{ animationDelay: "0.1s" }} className="lg:text-[200px] text-[100px] text-[#272727] hover:text-[#F5F4FF] font-black transition-all tracking-wider animate__animated animate__fadeInLeft">
               PORT-
             </span>
@@ -85,7 +88,7 @@ export default function Home() {
         </div>
         <span className="tracking-wider">-Portfolio</span>
       </div>
-      <img onClick={scrollToSection} style={{ animationDuration: "1.5s" }} className="absolute lg:-bottom-4 bottom-0 w-[100px] h-[100px] animate-bounce duration-700 cursor-pointer" src="Letsseemore.png" alt="See more" />
+      <img onClick={scrollToSection} style={{ animationDuration: "1.5s" }} className="absolute lg:-bottom-4 bottom-0 lg:w-[100px] w-[70px] lg:h-[100px] h-[70px] animate-bounce duration-700 cursor-pointer" src="Letsseemore.png" alt="See more" />
 
       {/* Section 2 Project */}
       <div ref={sectionRef} className="w-screen lg:h-screen flex overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory scrollbar-hidden touch-auto lg:pt-0 pt-16">
@@ -107,6 +110,7 @@ export default function Home() {
               </a>
             </div>
           </div>
+          
           {/* Element dekoratif absolut */}
           <div
             style={{

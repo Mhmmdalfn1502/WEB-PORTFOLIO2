@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav style={{ color: "#272727" }} className="flex justify-between items-center px-4 py-4 lg:px-23 lg:py-10 bg-[#F5F4FF] fixed top-0 left-0 w-full z-50">
+      <nav style={{ color: "#272727" }} className="flex justify-between items-center px-4 py-4 lg:px-23 lg:py-10 fixed w-full z-50">
         <a href="/" className="text-[24px] font-bold">
           ALFAN.
         </a>
@@ -44,39 +44,39 @@ export default function Navbar() {
         }`}
       >
         <ul className="flex flex-col gap-2 text-[#272727] font-extrabold text-[40px] tracking-wider py-10 border-y-1 border-[#272727]">
-          <li className="flex flex-row justify-between items-center px-0 hover:px-2 transition-all duration-300 ease-in-out">
-            <div>
-              <Link className="lg:text-[54px] " href="/">
-                HOME
-              </Link>
-              <span className="text-[#808080] font-medium text-[16px] ml-2">(01)</span>
-            </div>
-            <Link className="hover:rotate-45 transition-transform duration-300" href="#about">
-              <CiCircleChevRight size={40} color="#272727" />
-            </Link>
-          </li>
-          <li className="flex flex-row justify-between items-center px-0 hover:px-2 transition-all duration-300 ease-in-out">
-            <div>
-              <Link className="lg:text-[54px]" href="/aboutme">
-                ABOUT ME
-              </Link>
-              <span className="text-[#808080] font-medium text-[16px] ml-2">(02)</span>
-            </div>
-            <Link className="hover:rotate-45 transition-transform duration-300" href="#about">
-              <CiCircleChevRight size={40} color="#272727" />
-            </Link>
-          </li>
-          <li className="flex flex-row justify-between items-center px-0 hover:px-2 transition-all duration-300 ease-in-out">
-            <div>
-              <Link className="lg:text-[54px]" href="/works">
-                WORKS
-              </Link>
-              <span className="text-[#808080] font-medium text-[16px] ml-2">(03)</span>{" "}
-            </div>
-            <Link className="hover:rotate-45 transition-transform duration-300" href="#about">
-              <CiCircleChevRight size={40} color="#272727" />
-            </Link>
-          </li>
+          <Link className="lg:text-[54px] " href="/">
+            <li className="flex flex-row justify-between items-center px-0 hover:px-2 transition-all duration-300 ease-in-out">
+              <div>
+                <span>HOME</span>
+                <span className="text-[#808080] font-medium text-[16px] ml-2">(01)</span>
+              </div>
+              <div className="hover:rotate-45 transition-transform duration-300">
+                <CiCircleChevRight size={40} color="#272727" />
+              </div>
+            </li>
+          </Link>
+          <Link className="lg:text-[54px]" href="/aboutme">
+            <li className="flex flex-row justify-between items-center px-0 hover:px-2 transition-all duration-300 ease-in-out">
+              <div>
+                <span>ABOUT ME</span>
+                <span className="text-[#808080] font-medium text-[16px] ml-2">(02)</span>
+              </div>
+              <div className="hover:rotate-45 transition-transform duration-300">
+                <CiCircleChevRight size={40} color="#272727" />
+              </div>
+            </li>
+          </Link>
+          <Link className="lg:text-[54px]" href="/works">
+            <li className="flex flex-row justify-between items-center px-0 hover:px-2 transition-all duration-300 ease-in-out">
+              <div>
+                <span>WORKS</span>
+                <span className="text-[#808080] font-medium text-[16px] ml-2">(03)</span>{" "}
+              </div>
+              <div className="hover:rotate-45 transition-transform duration-300">
+                <CiCircleChevRight size={40} color="#272727" />
+              </div>
+            </li>
+          </Link>
         </ul>
         <div className="flex flex-row gap-2 items-center lg:py-10 py-0 pt-4">
           <a href="https://www.instagram.com/mhmmdalfn_1502/">
