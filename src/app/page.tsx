@@ -86,9 +86,9 @@ export default function Home() {
             <ScrambleText text="Github" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
           </a>
         </div>
+      <img onClick={scrollToSection} style={{ animationDuration: "1.5s" }} className="absolute lg:-bottom-4 md:-bottom-2 bottom-0 lg:w-[100px] w-[70px] lg:h-[100px] h-[70px] animate-bounce duration-700 cursor-pointer" src="Letsseemore.png" alt="See more" />
         <span className="tracking-wider">-Portfolio</span>
       </div>
-      <img onClick={scrollToSection} style={{ animationDuration: "1.5s" }} className="absolute lg:-bottom-4 bottom-0 lg:w-[100px] w-[70px] lg:h-[100px] h-[70px] animate-bounce duration-700 cursor-pointer" src="Letsseemore.png" alt="See more" />
 
       {/* Section 2 Project */}
       <div ref={sectionRef} className="w-screen lg:h-screen flex overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory scrollbar-hidden touch-auto lg:pt-0 pt-16">
@@ -110,7 +110,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          
+
           {/* Element dekoratif absolut */}
           <div
             style={{
