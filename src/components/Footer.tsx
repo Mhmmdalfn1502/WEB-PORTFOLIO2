@@ -5,24 +5,23 @@ import { FaPaperPlane } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Footer() {
-const [isSending, setIsSending] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
-const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault(); // mencegah submit default agar kita bisa kontrol sendiri
-  setIsSending(true);
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // mencegah submit default agar kita bisa kontrol sendiri
+    setIsSending(true);
 
-  const form = e.currentTarget;
+    const form = e.currentTarget;
 
-  // Lanjutkan submit otomatis setelah delay animasi
-  setTimeout(() => {
-    form.submit();     // submit form ke Formspree
-    form.reset();      // kosongkan input form
-    setIsSending(false); // reset tombol ke kondisi awal (opsional)
-  }, 2000); // delay 2 detik untuk animasi pesawat
-};
+    // Lanjutkan submit otomatis setelah delay animasi
+    setTimeout(() => {
+      form.submit(); // submit form ke Formspree
+      form.reset(); // kosongkan input form
+      setIsSending(false); // reset tombol ke kondisi awal (opsional)
+    }, 2000); // delay 2 detik untuk animasi pesawat
+  };
 
-
- return (
+  return (
     <footer className="bg-[#F5F4FF] ">
       <div className="marquee-wrapper">
         <span className="marquee-content lg:text-[128px] text-[82px] text-[#272727] font-extrabold">HELLO! HELLO! HELLO! HELLO! HELLO! HELLO!</span>
@@ -33,7 +32,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
       <div className="flex lg:flex-row flex-col justify-between lg:py-10 py-4 lg:px-23 px-4">
         <div id="contact" className="flex lg:flex-row flex-col justify-between lg:w-[50%] w-full">
-          <form action="https://formspree.io/f/xldlepnr" method="POST" onSubmit={handleSubmit} className="flex flex-col gap-4 w-full mx-auto">
+          <form action="https://formspree.io/f/myzdorno" method="POST" onSubmit={handleSubmit} className="flex flex-col gap-4 w-full mx-auto">
             <input type="text" name="name" placeholder="Your Name" required className="p-2 border rounded" />
             <input type="email" name="email" placeholder="Your Email" required className="p-2 border rounded" />
             <textarea name="message" placeholder="Message" required className="p-2 border rounded" rows={5}></textarea>
@@ -65,7 +64,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
               <span className="text-[16px] text-[#F5F4FF] w-[276px] px-2 tracking-wider bg-[#272727]">Chase the vision with me.</span>
               <span className="text-[16px] text-[#272727] tracking-wider font-bold">Follow me.</span>
               <div className="flex flex-row gap-2 items-center">
-                <a href="https://www.instagram.com/mhmmdalfn_1502/">  
+                <a href="https://www.instagram.com/mhmmdalfn_1502/">
                   <ScrambleText text="Instagram" className="text-[16px] text-[#272727] tracking-wider hover:text-black" />
                 </a>
                 <span>|</span>
