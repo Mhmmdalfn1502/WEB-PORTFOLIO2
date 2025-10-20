@@ -33,13 +33,6 @@ export default function Home() {
     project2Ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
   };
 
-  // const trackIds = [
-  //   "5WOSNVChcadlsCRiqXE45K", // Contoh track 1
-  //   "4uLU6hMCjMI75M1A2tKUQC", // Contoh track 2
-  //   "0VjIjW4GlUZAMYd2vXMi3b", // Contoh track 3
-  //   "3n3Ppam7vgaVa1iaRUc9Lp", // Contoh track 4
-  // ];
-
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#F5F4FF] lg:pt-36 pt-20">
       {/* Header */}
@@ -265,15 +258,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="min-h-screen w-full flex flex-col items-center py-12">
-        <h1 className="text-3xl font-bold mb-8">🎶 My Favorite Tracks</h1>
-
-        <div className="grid grid-cols-2 gap-6 px-4">
-          {trackIds.map((id) => (
-            <SpotifyPlayer key={id} trackId={id} />
-          ))}
-        </div>
-      </div> */}
     </main>
   );
 }
