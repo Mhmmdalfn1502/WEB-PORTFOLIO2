@@ -4,7 +4,6 @@ import "animate.css";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import { useRef, useEffect, useState } from "react";
 import ScrambleText from "@/components/ScrambleText";
-// import SpotifyPlayer from "@/components/SpotifyPlayer";
 
 export default function Home() {
   const sectionRef = useRef<HTMLDivElement>(null);
