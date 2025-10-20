@@ -230,6 +230,13 @@ export default function Works() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10 px-4 lg:px-6">
+
+        {/* <Link href="/works/graphic/Nirmalab">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Nirmalab/NirmalabHero.png" alt="" />
+          </div>
+        </Link>
+         */}
         <Link href="/works/graphic/FanStore">
           <div className="">
             {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
@@ -274,6 +281,11 @@ export default function Works() {
         <Link href="/works/graphic/ArcanePerfume">
           <div className="">
             <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/ArcanePerfume/GUIDE CARD.png" alt="" />
+          </div>
+        </Link>
+        <Link href="/works/graphic/Harfest">
+          <div className="">
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Harfest/Harfest2024-04.png" alt="" />
           </div>
         </Link>
       </div>

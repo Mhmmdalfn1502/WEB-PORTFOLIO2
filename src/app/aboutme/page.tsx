@@ -91,7 +91,7 @@ export default function AboutMe() {
           </a>
         </div>
 
-        <div className="w-full lg:w-[40%] lg:px-0 px-4 lg:mt-18 mt-10 lg:text-justify text-center">
+        <div className="w-full lg:w-[40%] lg:px-0 px-4 lg:mt-18 mt-10 lg:text-justify text-center"> 
           <span className="text-[32px] lg:text-[40px] font-extrabold leading-10 -tracking-tight">I'm UI/UX designer and Front-end web developer</span>
           <div className="paragraph flex flex-col gap-6 mt-10 text-start text-[16px] leading-relaxed">
             <span>

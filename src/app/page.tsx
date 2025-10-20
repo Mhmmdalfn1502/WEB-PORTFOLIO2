@@ -4,6 +4,7 @@ import "animate.css";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import { useRef, useEffect, useState } from "react";
 import ScrambleText from "@/components/ScrambleText";
+// import SpotifyPlayer from "@/components/SpotifyPlayer";
 
 export default function Home() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -32,6 +33,13 @@ export default function Home() {
   const scrollToProject2 = () => {
     project2Ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
   };
+
+  // const trackIds = [
+  //   "5WOSNVChcadlsCRiqXE45K", // Contoh track 1
+  //   "4uLU6hMCjMI75M1A2tKUQC", // Contoh track 2
+  //   "0VjIjW4GlUZAMYd2vXMi3b", // Contoh track 3
+  //   "3n3Ppam7vgaVa1iaRUc9Lp", // Contoh track 4
+  // ];
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#F5F4FF] lg:pt-36 pt-20">
@@ -257,6 +265,16 @@ export default function Home() {
           <span className="absolute lg:top-40 top-3 lg:right-28 right-6 lg:text-[120px] text-[60px] text-[#272727]/50 font-extrabold leading-24 opacity-50">04</span>
         </div>
       </div>
+
+      {/* <div className="min-h-screen w-full flex flex-col items-center py-12">
+        <h1 className="text-3xl font-bold mb-8">🎶 My Favorite Tracks</h1>
+
+        <div className="grid grid-cols-2 gap-6 px-4">
+          {trackIds.map((id) => (
+            <SpotifyPlayer key={id} trackId={id} />
+          ))}
+        </div>
+      </div> */}
     </main>
   );
 }
