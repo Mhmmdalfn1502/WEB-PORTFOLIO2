@@ -5,6 +5,16 @@ import ScrambleText from "@/components/ScrambleText";
 
 const experiences = [
   {
+    title: "Fulltime (Remote)",
+    details: ["UI/UX Designer | Transportech.Ai"],
+    date: "Nov 2025 - Mar 2026",
+  },
+  {
+    title: "Internship",
+    details: ["Graphic Designer & Video Editor | PT Sinergi Ayu Semesta"],
+    date: "Oct - Nov 2025",
+  },
+  {
     title: "Assistant Lecturer",
     details: ["- UI/UX Design", "- Teknik Animasi dan Multimedia | IBI Kesatuan Bogor"],
     date: "Sep 2024 - Jan 2025",
@@ -83,7 +93,7 @@ export default function AboutMe() {
           <a className="text-[16px] tracking-wider" href="https://www.instagram.com/mhmmdalfn_1502/">
             <ScrambleText text="Instagram" />
           </a>
-          <a href="/CV-MuhammadAlfan.pdf" download className="text-[16px] text-center tracking-wider font-bold">
+          <a href="/CV_MUHAMMAD ALFAN_2026.pdf" download className="text-[16px] text-center tracking-wider font-bold">
             <ScrambleText text="My Resume" />
           </a>
           <a className="text-[16px] tracking-wider" href="https://www.linkedin.com/in/muhammad-alfan1502/">

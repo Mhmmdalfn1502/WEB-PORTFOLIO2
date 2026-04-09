@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav style={{ color: "#272727" }} className="flex justify-between items-center bg-[#F5F4FF] px-4 py-4 lg:px-23 lg:py-10 fixed w-full z-50">
+      <nav style={{ color: "#272727" }} className="flex justify-between items-center bg-[#F5F4FF] px-4 py-4 lg:px-23 lg:py-10 fixed w-full z-50 border-gray-300 border-b-1 border-dashed">
         <a href="/" className="text-[24px] font-bold">
           ALFAN.
         </a>

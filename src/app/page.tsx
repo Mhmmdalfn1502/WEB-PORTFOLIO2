@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="flex flex-row items-end gap-4">
             <div className="line w-[80%] lg:h-[150px] h-[10px] border-l-2 border-b-2 border-black"></div>
-            <a href="/CV_MUHAMMAD ALFAN_2025.pdf" download className="border-1 w-[30%] h-[30px] text-center text-[16px]">
+            <a href="/CV_MUHAMMAD ALFAN_2026.pdf" download className="border-1 w-[30%] h-[30px] text-center text-[16px]">
               My Resume
             </a>
           </div>
