@@ -233,6 +233,12 @@ export default function Works() {
             <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Nirmalab/NirmalabHero.png" alt="" />
           </div>
         </Link> */}
+        <Link href="/works/graphic/DriverScoring">
+          <div className="">
+            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/DriverScoring/Page (1).png" alt="" />
+          </div>
+        </Link>
         <Link href="/works/graphic/DriverApp_Transportech">
           <div className="">
             {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
@@ -242,7 +248,7 @@ export default function Works() {
         <Link href="/works/graphic/DriverApp_IVI">
           <div className="">
             {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Driver App - IVI/Homepage.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Driver App - IVI/Mockup_IVI.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/TransportechArchitecture">
