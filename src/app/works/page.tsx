@@ -236,76 +236,76 @@ export default function Works() {
         <Link href="/works/graphic/DriverScoring">
           <div className="">
             {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/DriverScoring/Page (1).png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/DriverScoring/Page (1).png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/DriverApp_Transportech">
           <div className="">
-            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Driver App_Transportech/1.png" alt="" />
+            {/* <div className="w-full h-[250px] lg:h-[400px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 aw hover:scale-102 hover:shadow-xl" src="/DGraphic/Driver App_Transportech/1.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/DriverApp_IVI">
           <div className="">
-            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Driver App - IVI/Mockup_IVI.png" alt="" />
+            {/* <div className="w-full h-[250px] lg:h-[400px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/Driver App - IVI/Mockup_IVI.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/TransportechArchitecture">
           <div className="">
-            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/TransportechArchitecture/Slide 2.png" alt="" />
+            {/* <div className="w-full h-[250px] lg:h-[400px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/TransportechArchitecture/Slide 2.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/FanStore">
           <div className="">
-            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/FanStore/Slide16.png" alt="" />
+            {/* <div className="w-full h-[250px] lg:h-[400px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/FanStore/Slide16.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Tara">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Tara/Branding-17.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/Tara/Branding-17.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Antuisi">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/AntuisiStudio/Compro-01.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/AntuisiStudio/Compro-01.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/InfoKuliner">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/InfoKuliner/Slide1.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/InfoKuliner/Slide1.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/HotelReservation">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/HotelReservation/Header.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/HotelReservation/Header.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Meranto">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Meranto/Slide7.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/Meranto/Slide7.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Sony">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Sony/Header.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/Sony/Header.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/DaftenPerfume">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/DaftenPerfume/Slide3.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/DaftenPerfume/Slide3.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/ArcanePerfume">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/ArcanePerfume/GUIDE CARD.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/ArcanePerfume/GUIDE CARD.png" alt="" />
           </div>
         </Link>
         <Link href="/works/graphic/Harfest">
           <div className="">
-            <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Harfest/Harfest2024-04.png" alt="" />
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/Harfest/Harfest2024-04.png" alt="" />
           </div>
         </Link>
       </div>
