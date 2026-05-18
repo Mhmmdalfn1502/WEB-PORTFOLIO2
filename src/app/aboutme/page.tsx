@@ -5,13 +5,13 @@ import ScrambleText from "@/components/ScrambleText";
 
 const experiences = [
   {
-    title: "Fulltime (Remote)",
-    details: ["UI/UX Designer | Transportech.Ai"],
+    title: "UI/UX Designer",
+    details: ["Fulltime (Remote) | Transportech.Ai"],
     date: "Nov 2025 - Mar 2026",
   },
   {
-    title: "Internship",
-    details: ["Graphic Designer & Video Editor | PT Sinergi Ayu Semesta"],
+    title: "Graphic Designer & Video Editor",
+    details: ["Internship | PT Sinergi Ayu Semesta"],
     date: "Oct - Nov 2025",
   },
   {
@@ -20,8 +20,8 @@ const experiences = [
     date: "Sep 2024 - Jan 2025",
   },
   {
-    title: "Internship",
-    details: ["Graphic Designer | Bestari Property"],
+    title: "Graphic Designer",
+    details: ["Internship | Bestari Property"],
     date: "Jul 2024 - Jan 2025",
   },
   {
