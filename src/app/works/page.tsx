@@ -228,11 +228,17 @@ export default function Works() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10 px-4 lg:px-6">
-        {/* <Link href="/works/graphic/Nirmalab">
+        <Link href="/works/graphic/Nirmalab">
           <div className="">
             <img className="w-full h-[250px] lg:h-[300px] object-cover transition-all duration-700 grayscale-50 hover:grayscale-0 hover:scale-102 hover:shadow-xl" src="/DGraphic/Nirmalab/NirmalabHero.png" alt="" />
           </div>
-        </Link> */}
+        </Link>
+        <Link href="/works/graphic/Sosmed">
+          <div className="">
+            {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}
+            <img className="w-full h-[250px] lg:h-[400px] object-cover transition-all duration-700 hover:scale-102 hover:shadow-xl" src="/DGraphic/Sosmed/Sinergi Medsos.png" alt="" />
+          </div>
+        </Link>
         <Link href="/works/graphic/DriverScoring">
           <div className="">
             {/* <div className="w-full h-[250px] lg:h-[300px] bg-transparent hover:bg-blue-600 transition-all duration-300"></div> */}

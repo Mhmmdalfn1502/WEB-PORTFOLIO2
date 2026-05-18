@@ -97,7 +97,7 @@ export default function Home() {
       {/* Section 2 Project */}
       <div ref={sectionRef} className="w-screen lg:h-screen flex overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory scrollbar-hidden touch-auto lg:pt-0 pt-16">
         {/* First sec */}
-        <div className="flex-shrink-0 snap-start w-screen h-full px-4 lg:px-28 relative">
+        {/* <div className="flex-shrink-0 snap-start w-screen h-full px-4 lg:px-28 relative">
           <div className="flex flex-col lg:justify-center justify-between h-full">
             <div className="flex flex-col">
               <span className="lg:text-[128px] text-[64px] leading-tight text-[#272727] font-extrabold">PORTFOLIO</span>
@@ -113,10 +113,10 @@ export default function Home() {
                 <AiOutlineSwapRight size={20} color="#272727" />
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* Element dekoratif absolut */}
-          <div
+          {/* <div
             style={{
               transform: `translate(${position.x}px, ${position.y}px)`,
             }}
@@ -126,10 +126,10 @@ export default function Home() {
           </div>
           <div className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[530px] w-[300px] lg:h-[510px] h-[330px] bg-gradient-to-bl from-[#272727]/10 pointer-events-none z-0"></div>
           <img className="absolute lg:top-25 top-3 lg:right-28 right-0 lg:w-[120px] w-[80px] pointer-events-none opacity-50 z-0" src="Kutip.png" alt="" />
-        </div>
+        </div> */}
 
         {/* Project Card 2 */}
-        <div ref={project2Ref} id="project2" className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
+        {/* <div ref={project2Ref} id="project2" className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
           <div className="flex lg:flex-row flex-col items-center h-full lg:w-full w-[350px]">
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">TRAVEL APPLICATION</span>
@@ -159,10 +159,10 @@ export default function Home() {
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
           <span className="absolute lg:top-40 top-3 lg:right-28 right-6 lg:text-[120px] text-[60px] text-[#272727]/50 font-extrabold leading-24 opacity-50">01</span>
-        </div>
+        </div> */}
 
         {/* Project Card 3 */}
-        <div className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
+        {/* <div className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
           <div className="flex lg:flex-row flex-col items-center h-full lg:w-full w-[350px]">
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">AI APPLICATION</span>
@@ -191,10 +191,10 @@ export default function Home() {
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
           <span className="absolute lg:top-40 top-3 lg:right-28 right-6 lg:text-[120px] text-[60px] text-[#272727]/50 font-extrabold leading-24 opacity-50">02</span>
-        </div>
+        </div> */}
 
         {/* Project Card 4 */}
-        <div className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
+        {/* <div className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
           <div className="flex lg:flex-row flex-col items-center h-full lg:w-full w-[350px]">
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">WEBSITE KULINER</span>
@@ -223,10 +223,10 @@ export default function Home() {
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
           <span className="absolute lg:top-40 top-3 lg:right-28 right-6 lg:text-[120px] text-[60px] text-[#272727]/50 font-extrabold leading-24 opacity-50">03</span>
-        </div>
+        </div> */}
 
         {/* Project Card 5 */}
-        <div className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
+        {/* <div className="flex-shrink-0 relative snap-start lg:w-screen lg:h-full px-4 lg:px-28">
           <div className="flex lg:flex-row flex-col items-center h-full lg:w-full w-[350px]">
             <div className="flex flex-col gap-0 justify-center items-start h-full lg:w-[30%] w-full">
               <span className="lg:text-[20px] text-[10px] tracking-wider">HAND RECOGNITION</span>
@@ -255,7 +255,7 @@ export default function Home() {
           </div>
           <img className="absolute lg:top-40 top-3 lg:left-140 left-72 lg:w-[80px] w-[80px] pointer-events-none opacity-50" src="Kutip.png" alt="" />
           <span className="absolute lg:top-40 top-3 lg:right-28 right-6 lg:text-[120px] text-[60px] text-[#272727]/50 font-extrabold leading-24 opacity-50">04</span>
-        </div>
+        </div> */}
       </div>
 
     </main>
