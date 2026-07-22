@@ -5,6 +5,11 @@ import ScrambleText from "@/components/ScrambleText";
 
 const experiences = [
   {
+    title: "Graphic Designer",
+    details: ["Fulltime | PT Showty International Global"],
+    date: "May - July 2026",
+  },
+  {
     title: "UI/UX Designer",
     details: ["Fulltime (Remote) | Transportech.Ai"],
     date: "Nov 2025 - Mar 2026",
